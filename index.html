@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/libs.min.css">
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.css">
 	<title>Start Template</title>
 </head>
 
@@ -14,7 +14,16 @@
 		<div class="phone">
 			<h1 class="title">Phone Keyboard</h1>
 			<div class="phone-container">
-				<input type="text" maxlength="11" class="number-input" id="numberInput" value="" placeholder="Phone Number" />
+				<div class="phone-input">
+					<input type="text" maxlength="11" class="number-input" id="numberInput" placeholder="Phone Number" />
+				<div class="delete-btn"> 
+					<i class="delete">
+						<img src="https://image.flaticon.com/icons/svg/61/61167.svg" width="30" height="30"
+							alt="Left Arrow free icon" title="Left Arrow free icon">
+					</i>
+				</div>
+				</div>
+				
 				<div class="keyboard">
 					<div class="number">
 						<span data-number="1"><i>1</i></span>
@@ -29,19 +38,18 @@
 
 					</div>
 					<div class="number aling-right">
+						<span data-number="*"><i>*</i>
+						</span>
+						
+						<span data-number="0"><i>0</i>
+						</span>
+						<span data-number="#"><i>#</i>
+						</span>
 						<a class=" call">
 							<i>
 								<img src="https://image.flaticon.com/icons/svg/40/40316.svg" alt="" />
 							</i>
 						</a>
-						<span data-number="0"><i>0</i>
-						</span>
-						<div>
-							<i class="delete">
-								<img src="https://image.flaticon.com/icons/svg/61/61167.svg" width="30" height="30"
-									alt="Left Arrow free icon" title="Left Arrow free icon">
-							</i>
-						</div>
 					</div>
 				</div>
 			</div>

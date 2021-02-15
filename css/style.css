@@ -14,7 +14,7 @@ body {
 
 input {
   font-size: 20px;
-  color: #d1d1d1;
+  color: #615f5f;
   font-weight: 400;
 }
 
@@ -28,7 +28,17 @@ input.number-input {
   border: 0;
   -webkit-box-shadow: 0px 0px 17px -1px rgba(132, 132, 132, 0.15);
   box-shadow: 0px 0px 17px -1px rgba(132, 132, 132, 0.15);
+  margin-right: 10px;
+  
 }
+/* .number-input:focus .number-input::placeholder{
+  color: transparent;
+} */
+
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
 
 .wrapper {
   width: 100%;
@@ -38,6 +48,10 @@ input.number-input {
   width: 350px;
   margin: 40px auto 0 auto;
   position: relative;
+}
+.phone-input {
+  display: flex;
+  align-items: center;
 }
 
 .wrapper .phone h1.title {
@@ -65,7 +79,7 @@ input.number-input {
 }
 
 .wrapper .phone .phone-container .keyboard .number.aling-right {
-  text-align: right;
+  text-align: center;
   width: 100%;
 }
 
@@ -73,11 +87,12 @@ input.number-input {
 .wrapper .phone .phone-container .keyboard .number div,
 .wrapper .phone .phone-container .keyboard .number a {
   font-size: 24px;
-  color: #E4BF88;
+  color: #cc8314;
   display: inline-block;
   width: 33%;
   text-align: center;
   margin-bottom: 25px;
+  
 }
 
 .wrapper .phone .phone-container .keyboard .number span.call img,
@@ -107,6 +122,11 @@ input.number-input {
   user-select: none;
   -webkit-box-shadow: 8px 8px 24px 0px rgba(132, 132, 132, 0.09);
   box-shadow: 8px 8px 24px 0px rgba(132, 132, 132, 0.09);
+  border: 1px solid #f1f1f1;
+}
+
+.delete-btn {
+  cursor: pointer;
 }
 
 .wrapper .phone .phone-container .keyboard .number span i.delete,
@@ -117,7 +137,8 @@ input.number-input {
   -webkit-box-shadow: 0 0 0 0;
   -moz-box-shadow: 0 0 0 0;
   -ms-box-shadow: 0 0 0 0;
-  color: #E4BF88;
+  color: #e08d0f;
+  cursor: pointer;
 }
 
 .wrapper .phone .phone-container .keyboard .number span i.delete img,
